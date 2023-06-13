@@ -1,12 +1,5 @@
-const express = require('express');
-const path = require('path');
-
-const app = express();
+const app = require("./index.js");
 
 app.listen(3000, () => {
-  console.log('server started');
-});
-
-app.get('/', (req, res) => {
-  res.send("Hello world");
+  console.log("server started");
 });
